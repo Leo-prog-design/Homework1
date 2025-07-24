@@ -1,3 +1,4 @@
+// Тестируем
 public class Main {
     public static void main(String[] args) {
         Fish fish = new Fish(10, 3);
@@ -13,6 +14,7 @@ public class Main {
         bear.isFur();
         bear.move();
         bear.info();
+        System.out.println(bear.getAge());
 
         whale.setName("Bob");
         whale.info();
