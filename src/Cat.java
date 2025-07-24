@@ -1,9 +1,29 @@
 // Кот
 public class Cat extends Mammal implements Furable{
     private String name;
+    private int age;
+    private int weight;
 
     public Cat(int age, int weight) {
         super(age, weight);
+        this.age = age;
+        this.weight = weight;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
     public void setName(String name) {
@@ -21,6 +41,6 @@ public class Cat extends Mammal implements Furable{
 
     @Override
     public void isFur() {
-        System.out.println("Whale is name " + name + " swimming");
+        System.out.println("Whale by name " + name + " has fur");
     }
 }
