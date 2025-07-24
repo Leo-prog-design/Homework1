@@ -40,7 +40,17 @@ public class Whale extends Mammal implements Waterable {
     }
 
     @Override
+    public void eat() {
+        System.out.println(name + " eat");
+    }
+
+    @Override
     public void swim() {
         System.out.println("Whale by name " + name + " swimming");
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Whale by name " + name + ", his age " + age + " and weight " + weight);
     }
 }

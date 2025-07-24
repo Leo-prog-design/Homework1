@@ -17,4 +17,8 @@ public abstract class Animal {
     public void eat() {
         System.out.println("Eat");
     }
+
+    public void info() {
+        System.out.println("Info");
+    }
 }

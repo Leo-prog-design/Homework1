@@ -1,5 +1,5 @@
 // Кот
-public class Cat extends Mammal implements Furable{
+public class Cat extends Mammal implements Woolly {
     private String name;
     private int age;
     private int weight;
@@ -40,7 +40,17 @@ public class Cat extends Mammal implements Furable{
     }
 
     @Override
+    public void eat() {
+        System.out.println(name + " eat");
+    }
+
+    @Override
     public void isFur() {
         System.out.println("Whale by name " + name + " has fur");
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Cat by name " + name + ", his age " + age + " and weight " + weight);
     }
 }

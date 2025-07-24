@@ -1,4 +1,4 @@
 // Имеет мех
-public interface Furable {
+public interface Woolly {
     void isFur();
 }

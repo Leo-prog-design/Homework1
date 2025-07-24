@@ -12,22 +12,22 @@ public class Fish extends Animal implements Waterable {
 
     @Override
     public void setAge(int age) {
-
+        this.age = age;
     }
 
     @Override
     public int getAge() {
-        return 0;
+        return age;
     }
 
     @Override
     public void setWeight(int weight) {
-
+        this.weight = weight;
     }
 
     @Override
     public int getWeight() {
-        return 0;
+        return weight;
     }
 
     public void setName(String name) {
@@ -44,7 +44,18 @@ public class Fish extends Animal implements Waterable {
     }
 
     @Override
+    public void eat() {
+        System.out.println(name + " eat");
+    }
+
+    @Override
     public void swim() {
         System.out.println("Fish by name " + name + " swimming");
     }
+
+    @Override
+    public void info() {
+        System.out.println("Fish by name " + name + ", his age " + age + " and weight " + weight);
+    }
+
 }

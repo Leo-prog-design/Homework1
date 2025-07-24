@@ -1,5 +1,5 @@
 // Медведь
-public class Bear extends Mammal implements Furable {
+public class Bear extends Mammal implements Woolly {
     private String name;
     private int age;
     private int weight;
@@ -40,7 +40,17 @@ public class Bear extends Mammal implements Furable {
     }
 
     @Override
+    public void eat() {
+        System.out.println(name + " eat");
+    }
+
+    @Override
     public void isFur() {
-        System.out.println("Bear by name " + name + " has fur, his age is ");
+        System.out.println("Bear by name " + name + " has fur");
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Bear by name " + name + ", his age " + age + " and weight " + weight);
     }
 }
