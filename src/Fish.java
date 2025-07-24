@@ -30,10 +30,12 @@ public class Fish extends Animal implements Waterable {
         return weight;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }

@@ -9,27 +9,27 @@ public class Cat extends Mammal implements Woolly {
         this.age = age;
         this.weight = weight;
     }
-
+    @Override
     public void setAge(int age) {
         this.age = age;
     }
-
+    @Override
     public int getAge() {
         return age;
     }
-
+    @Override
     public void setWeight(int weight) {
         this.weight = weight;
     }
-
+    @Override
     public int getWeight() {
         return weight;
     }
-
+    @Override
     public void setName(String name) {
         this.name = name;
     }
-
+    @Override
     public String getName() {
         return name;
     }
@@ -47,6 +47,11 @@ public class Cat extends Mammal implements Woolly {
     @Override
     public void isFur() {
         System.out.println("Whale by name " + name + " has fur");
+    }
+
+    @Override
+    public void hasSpine() {
+        System.out.println("Cat has spine");
     }
 
     @Override

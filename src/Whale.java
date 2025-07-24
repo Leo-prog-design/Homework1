@@ -10,26 +10,32 @@ public class Whale extends Mammal implements Waterable {
         this.weight = weight;
     }
 
+    @Override
     public void setAge(int age) {
         this.age = age;
     }
 
+    @Override
     public int getAge() {
         return age;
     }
 
+    @Override
     public void setWeight(int weight) {
         this.weight = weight;
     }
 
+    @Override
     public int getWeight() {
         return weight;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -47,6 +53,11 @@ public class Whale extends Mammal implements Waterable {
     @Override
     public void swim() {
         System.out.println("Whale by name " + name + " swimming");
+    }
+
+    @Override
+    public void hasSpine() {
+        System.out.println("Whale has spine");
     }
 
     @Override

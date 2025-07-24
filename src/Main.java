@@ -13,5 +13,10 @@ public class Main {
         bear.isFur();
         bear.move();
         bear.info();
+
+        whale.setName("Bob");
+        whale.info();
+        whale.swim();
+        whale.hasSpine();
     }
 }
