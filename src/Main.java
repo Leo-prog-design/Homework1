@@ -16,6 +16,9 @@ public class Main {
 
         whale.setName("Bob");
         whale.info();
+        whale.setAge(31);
+        whale.setWeight(550);
+        whale.info();
         whale.swim();
         whale.hasSpine();
     }
